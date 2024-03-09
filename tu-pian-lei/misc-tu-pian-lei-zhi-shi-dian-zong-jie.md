@@ -67,7 +67,7 @@ height为
 
 <figure><img src="../.gitbook/assets/image (6).png" alt=""><figcaption></figcaption></figure>
 
-
+如果我们要修改这个width和height我看到了一个脚本
 
 
 
