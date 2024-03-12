@@ -16,13 +16,13 @@ description: 这里还有很多的工具所以我会把安装包也上传上来�
 
 将一张png图片放到winhex下面看看吧。
 
-<figure><img src="../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (2) (1).png" alt=""><figcaption></figcaption></figure>
 
 #### <mark style="color:yellow;">(1)png文件格式</mark>
 
 png文件从整体上来看主要是由文件头和三组以上的数据块（后面介绍）按照特定的顺序组成，最基本的png至少包括文件头，IHDR,IDAT,IEND组成。用一张图来表示
 
-<figure><img src="../.gitbook/assets/image (3).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (3) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### <mark style="background-color:red;">Ⅰ.文件头</mark>
 
@@ -32,7 +32,7 @@ png文件从整体上来看主要是由文件头和三组以上的数据块（�
 89 50 4E 47 0D 0A 1A 0A          
 ```
 
-<figure><img src="../.gitbook/assets/image (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### <mark style="background-color:red;">Ⅱ数据块（Chunk）</mark>
 
@@ -51,13 +51,13 @@ PNG有两种类型的数据块，一个是标准的数据块，另外一个是�
 
 #### ①length：
 
-<figure><img src="../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (8).png" alt=""><figcaption></figcaption></figure>
 
 这个长度是13个字节，一般都是13个字节。表示头部数据块的长度为13（从宽高开始算）
 
 #### ②CRC
 
-<figure><img src="../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 从第二行的D开始后4个字节就是CRC校验码。
 
@@ -100,7 +100,7 @@ print(hex(crc32key))
 49 48 44 52
 ```
 
-<figure><img src="../.gitbook/assets/image (4).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (4) (1).png" alt=""><figcaption></figcaption></figure>
 
 然后后面就是她的主要内容，一共是13个字节。他的格式网上有表格总结，这里贴过来。我们主要关注前8字节
 
@@ -111,11 +111,11 @@ print(hex(crc32key))
 
 比如在这个winhex里面width为
 
-<figure><img src="../.gitbook/assets/image (5).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (5) (1).png" alt=""><figcaption></figcaption></figure>
 
 height为
 
-<figure><img src="../.gitbook/assets/image (6).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (6) (1).png" alt=""><figcaption></figcaption></figure>
 
 {% hint style="info" %}
 文件的height和weight不能随意修改。
@@ -196,21 +196,81 @@ IDAT存放着图像真正的数据信息，因此，如果能够了解IDAT的结
 
 这里有一个工具可以判断IDAT是否是正确的。pngcheck ，如果不了解的，可以去看看。 [tu-pian-lei-gong-ju-zong-jie.md](tu-pian-lei-gong-ju-zong-jie.md "mention")
 
+<figure><img src="../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
 
+我们可以看到我的这张图片的IDAT的长度是在65536就满了。
 
+这里展示一个利用python zlib解压多余IDAT块的内容的脚本，注意剔除长度，数据块类型以及末尾的CRC检验值
 
+```python
+import zlib
+import binascii
+IDAT = "789...667".decode('hex')
+result = binascii.hexlify(zlib.decompress(IDAT))
+print result
+```
 
+这里还有一个知识点LSB
 
+## <mark style="color:yellow;">①LSB</mark>
 
+我们需要用到一个非常常用的工具叫做，stegsolve。 [tu-pian-lei-gong-ju-zong-jie.md](tu-pian-lei-gong-ju-zong-jie.md "mention")
 
+> LSB：
+>
+> &#x20;Least Significant Bit，最低有效位。PNG 文件中的图像像数一般是由 RGB 三原色（红绿蓝）组成，每一种颜色占用 8 位，取值范围为 `0x00` 至 `0xFF`，即有 256 种颜色，一共包含了 256 的 3 次方的颜色，即 16777216 种颜色。
+>
+> 而人类的眼睛可以区分约 1000 万种不同的颜色，意味着人类的眼睛无法区分余下的颜色大约有 6777216 种。
+>
+> LSB 隐写就是修改 RGB 颜色分量的最低二进制位（LSB），每个颜色会有 8 bit，LSB 隐写就是修改了像数中的最低的 1 bit，而人类的眼睛不会注意到这前后的变化，每个像素可以携带 3 比特的信息。
 
+### <mark style="background-color:red;">Ⅴ.IED</mark>
 
+文件尾部表示图像结束。
 
+```
+00 00 00 00 49 45 4E 44 AE 42 60 82
+```
 
+<figure><img src="../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
 
+IEND数据块的长度总是`00 00 00 00`，数据标志总是`49 45 4E 44` ，所以他的CRC码也总是`AE 42 60 82`
 
+***
 
+### ②JPG
 
+先将一张JPG图片放到winhex下面看看。
+
+<figure><img src="../.gitbook/assets/image (7).png" alt=""><figcaption></figcaption></figure>
+
+{% hint style="info" %}
+jpg和jpeg都是一样的，没有区别。
+{% endhint %}
+
+jpg格式的文件是分为一个一个的段里存储的，段的多少和长度并不是一定的。每个段一定都包括短的标志和类型，段的长度。就是这么理解，jpg就是一段段的，每一段开头都有一个标志。
+
+### <mark style="background-color:red;">Ⅰ.段的标识与类型</mark>
+
+不同的段的段类型不同，但是一张图片的开头的段都是SOI类型
+
+| 段类型  | 表示符号    | 说明                 |
+| ---- | ------- | ------------------ |
+| SOI  | `FF D8` | 文件头                |
+| APP0 | `FF E0` | 定义交换格式和图像识别信息      |
+| APP1 | `FF E1` | 定义交换格式和图像识别信息      |
+| ……   | ……      | ……                 |
+| APPn | `FF En` | 定义交换格式和图像识别信息      |
+| DQT  | `FF DB` | 定义量化表              |
+| SOF0 | `FF C0` | 图像基本信息             |
+| SOF1 | `FF C1` | 图像基本信息             |
+| ……   | ……      | ……                 |
+| SOFn | `FF Cn` | 图像基本信息             |
+| DHT  | `FF C4` | 定义 Huffman 表（霍夫曼表） |
+| DRI  | `FF DD` | 定义重新开始间隔           |
+| SOS  | `FF DA` | 扫描行开始              |
+| COM  | `FF FE` | 注释                 |
+| EOI  | `FF D9` | 文件尾                |
 
 
 
@@ -232,7 +292,7 @@ IDAT存放着图像真正的数据信息，因此，如果能够了解IDAT的结
 
 {% embed url="https://ctf-wiki.org/misc/picture/png/" %}
 
-
+{% embed url="https://www.cnblogs.com/P201821460033/p/13658489.html" %}
 
 
 
