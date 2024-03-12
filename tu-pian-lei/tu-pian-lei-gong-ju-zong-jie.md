@@ -22,7 +22,7 @@ description: Misc感觉就是在用工具，发现有点难了说实话，比web
 pngcheck -v 图片名
 ```
 
-<figure><img src="../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (9).png" alt=""><figcaption></figcaption></figure>
 
 ***
 
@@ -38,7 +38,7 @@ pngcheck -v 图片名
 
 我们首先介绍他的界面的功能
 
-<figure><img src="../.gitbook/assets/image (3).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (3) (1).png" alt=""><figcaption></figcaption></figure>
 
 File Format：文件格式，查看图片的具体信息
 
@@ -54,7 +54,7 @@ Image Combiner：拼图，图片拼接。
 
 查看文件格式
 
-<figure><img src="../.gitbook/assets/image (4).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (4) (1).png" alt=""><figcaption></figcaption></figure>
 
 我们可以看到他有Chunk数据块的很多信息，CRC什么的都有。
 
@@ -64,7 +64,7 @@ Image Combiner：拼图，图片拼接。
 
 数据提取
 
-<figure><img src="../.gitbook/assets/image (5).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (5) (1).png" alt=""><figcaption></figcaption></figure>
 
 左边主要是RGBA的颜色通道。我们先介绍这几个参数。
 
@@ -90,15 +90,115 @@ R的亮度各有256个级别，GB同理。即从0到255，合计为256个。从�
 
 所以我们如果要看到LSB隐写的信息的话，就要把他设置成为下图这样。
 
+<figure><img src="../.gitbook/assets/image (6) (1).png" alt=""><figcaption></figcaption></figure>
+
+***
+
+## 3.Stegdetect
+
+### （1）官方文档下载方法
+
+{% embed url="https://wiki.bi0s.in/steganography/stegdetect/" %}
+
+{% file src="../.gitbook/assets/Stegdetect.zip" %}
+
+
+
+### （2）使用方法
+
+直接用可视化的方式，打开xsteg.exe。
+
+<figure><img src="../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
+
+然后修改参数，把sensitivity修改为10.00,把敏感度调高了才好检测到隐藏信息。
+
+然后选择文件
+
+<figure><img src="../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
+
+就可以出现结果了。
+
+也可以用指令。
+
+```
+-q 仅显示可能包含隐藏内容的图像。
+-n 启用检查JPEG文件头功能，以降低误报率。如果启用，所有带有批注区域的文件将被视为没有被嵌入信息。如果JPEG文件的JFIF标识符中的版本号不是1.1，则禁用OutGuess检测。
+-s 修改检测算法的敏感度，该值的默认值为1。检测结果的匹配度与检测算法的敏感度成正比，算法敏感度的值越大，检测出的可疑文件包含敏感信息的可能性越大。
+-d 打印带行号的调试信息。
+-t 设置要检测哪些隐写工具（默认检测jopi），可设置的选项如下：
+j 检测图像中的信息是否是用jsteg嵌入的。
+o 检测图像中的信息是否是用outguess嵌入的。
+p 检测图像中的信息是否是用jphide嵌入的。
+i 检测图像中的信息是否是用invisible secrets嵌入的。
+```
+
+***
+
+## 4.convert
+
+### (1)下载
+
+```
+sudo apt-get install imagemagick
+```
+
+### （2）使用方法
+
+用来对gif图片进行操作，可以把每一帧截出来，也可以把图片拼接在一起。
+
+#### ①分离gif文件。
+
+```
+convert A.gif A.png  #将A.gif中每一帧提取成A-n.png
+```
+
 <figure><img src="../.gitbook/assets/image (6).png" alt=""><figcaption></figcaption></figure>
 
+<figure><img src="../.gitbook/assets/image (7).png" alt=""><figcaption></figcaption></figure>
 
+答应我在一个文件夹里面弄，不然会弄死你。
 
+#### ②拼接图片
 
+```
+convert [参数1] {输入文件名} [输出文件名]		#拼接
+#[参数1]：+append 横向拼接 -append 纵向拼接 
+#{输入文件名}：要拼接的图片，每张图片名之间用空格分隔，支持正则表达式，有先后顺序
+```
 
+***
 
+## 5.identify
 
+以通过 **identify** 命令清晰的打印出每一帧的时间间隔。
 
+```
+identify -format "%s %T \n" 100.gif  	#格式：帧序号 间隔
+```
+
+***
+
+## 6.exiftool
+
+### （1）官方文档下载方式
+
+{% embed url="https://exiftool.org/" %}
+
+### （2）使用方法
+
+这里是linux环境下，直接查看信息就是
+
+```
+exiftool a.jpg
+```
+
+<figure><img src="../.gitbook/assets/image (8).png" alt=""><figcaption></figcaption></figure>
+
+***
+
+## 7.binwalk
+
+### （1）官方文档
 
 
 

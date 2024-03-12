@@ -16,13 +16,13 @@ description: 这里还有很多的工具所以我会把安装包也上传上来�
 
 将一张png图片放到winhex下面看看吧。
 
-<figure><img src="../.gitbook/assets/image (2) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (2) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 #### <mark style="color:yellow;">(1)png文件格式</mark>
 
 png文件从整体上来看主要是由文件头和三组以上的数据块（后面介绍）按照特定的顺序组成，最基本的png至少包括文件头，IHDR,IDAT,IEND组成。用一张图来表示
 
-<figure><img src="../.gitbook/assets/image (3) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (3) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### <mark style="background-color:red;">Ⅰ.文件头</mark>
 
@@ -32,7 +32,7 @@ png文件从整体上来看主要是由文件头和三组以上的数据块（�
 89 50 4E 47 0D 0A 1A 0A          
 ```
 
-<figure><img src="../.gitbook/assets/image (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### <mark style="background-color:red;">Ⅱ数据块（Chunk）</mark>
 
@@ -51,13 +51,13 @@ PNG有两种类型的数据块，一个是标准的数据块，另外一个是�
 
 #### ①length：
 
-<figure><img src="../.gitbook/assets/image (8).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (8) (1).png" alt=""><figcaption></figcaption></figure>
 
 这个长度是13个字节，一般都是13个字节。表示头部数据块的长度为13（从宽高开始算）
 
 #### ②CRC
 
-<figure><img src="../.gitbook/assets/image (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 从第二行的D开始后4个字节就是CRC校验码。
 
@@ -100,7 +100,7 @@ print(hex(crc32key))
 49 48 44 52
 ```
 
-<figure><img src="../.gitbook/assets/image (4) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (4) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 然后后面就是她的主要内容，一共是13个字节。他的格式网上有表格总结，这里贴过来。我们主要关注前8字节
 
@@ -111,11 +111,11 @@ print(hex(crc32key))
 
 比如在这个winhex里面width为
 
-<figure><img src="../.gitbook/assets/image (5) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (5) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 height为
 
-<figure><img src="../.gitbook/assets/image (6) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (6) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 {% hint style="info" %}
 文件的height和weight不能随意修改。
@@ -196,7 +196,7 @@ IDAT存放着图像真正的数据信息，因此，如果能够了解IDAT的结
 
 这里有一个工具可以判断IDAT是否是正确的。pngcheck ，如果不了解的，可以去看看。 [tu-pian-lei-gong-ju-zong-jie.md](tu-pian-lei-gong-ju-zong-jie.md "mention")
 
-<figure><img src="../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 我们可以看到我的这张图片的IDAT的长度是在65536就满了。
 
@@ -232,17 +232,17 @@ print result
 00 00 00 00 49 45 4E 44 AE 42 60 82
 ```
 
-<figure><img src="../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (2) (1).png" alt=""><figcaption></figcaption></figure>
 
 IEND数据块的长度总是`00 00 00 00`，数据标志总是`49 45 4E 44` ，所以他的CRC码也总是`AE 42 60 82`
 
 ***
 
-### ②JPG
+### <mark style="color:orange;">②JPG</mark>
 
 先将一张JPG图片放到winhex下面看看。
 
-<figure><img src="../.gitbook/assets/image (7).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (7) (1).png" alt=""><figcaption></figcaption></figure>
 
 {% hint style="info" %}
 jpg和jpeg都是一样的，没有区别。
@@ -254,23 +254,128 @@ jpg格式的文件是分为一个一个的段里存储的，段的多少和长�
 
 不同的段的段类型不同，但是一张图片的开头的段都是SOI类型
 
-| 段类型  | 表示符号    | 说明                 |
-| ---- | ------- | ------------------ |
-| SOI  | `FF D8` | 文件头                |
-| APP0 | `FF E0` | 定义交换格式和图像识别信息      |
-| APP1 | `FF E1` | 定义交换格式和图像识别信息      |
-| ……   | ……      | ……                 |
-| APPn | `FF En` | 定义交换格式和图像识别信息      |
-| DQT  | `FF DB` | 定义量化表              |
-| SOF0 | `FF C0` | 图像基本信息             |
-| SOF1 | `FF C1` | 图像基本信息             |
-| ……   | ……      | ……                 |
-| SOFn | `FF Cn` | 图像基本信息             |
-| DHT  | `FF C4` | 定义 Huffman 表（霍夫曼表） |
-| DRI  | `FF DD` | 定义重新开始间隔           |
-| SOS  | `FF DA` | 扫描行开始              |
-| COM  | `FF FE` | 注释                 |
-| EOI  | `FF D9` | 文件尾                |
+| 段类型      | 表示符号    | 说明                                      |
+| -------- | ------- | --------------------------------------- |
+| SOI（必须）  | `FF D8` | 文件头                                     |
+| APP0     | `FF E0` | 定义交换格式和图像识别信息                           |
+| APP1     | `FF E1` | 定义交换格式和图像识别信息                           |
+| ……       | ……      | ……                                      |
+| APPn（必须） | `FF En` | 定义交换格式和图像识别信息                           |
+| DQT（必须）  | `FF DB` | 定义量化表                                   |
+| SOF0     | `FF C0` | 图像基本信息                                  |
+| SOF1     | `FF C1` | 图像基本信息                                  |
+| ……       | ……      | ……                                      |
+| SOFn（必须） | `FF Cn` | 图像基本信息（SOF段定义了图像基本信息。包含了一些图片长宽高、组件等信息。） |
+| DHT（必须）  | `FF C4` | 定义 Huffman 表（霍夫曼表）                      |
+| DRI      | `FF DD` | 定义重新开始间隔                                |
+| SOS（必须）  | `FF DA` | 扫描行开始                                   |
+| COM      | `FF FE` | 注释                                      |
+| EOI(必须）  | `FF D9` | 文件尾                                     |
+
+### <mark style="background-color:red;">Ⅱ.段长度</mark>
+
+紧挨着上面两个类型字节存放的就是段的长度（上面FF XX的XX不算到长度中）。
+
+<figure><img src="../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+
+比如这个图片的APP0标记码长度为00 10（16字节）
+
+### <mark style="background-color:red;">Ⅲ.段的一般结构</mark>
+
+所以综上所述，每一段的结构就是
+
+| 名称  | 字节数      | 数据 | 说明                     |
+| --- | -------- | -- | ---------------------- |
+| 段标识 | 1        | FF | 每个新段的开始标识              |
+| 段类型 | 1        | …… | 段类型编码（称作“标记码”）         |
+| 段长度 | 2        |    | 包括段内容和段长度本身,不包括段标识和段类型 |
+| 段内容 | ≤65533字节 |    |                        |
+
+PS：
+
+* 有些段只有段标志和段类型。比如文件头和文件尾。
+* 段与段之间无论有多少FF都是合法的，这些FF成为填充字节，必须被忽视掉。
+
+
+
+- ***
+
+## <mark style="color:orange;">③GIF</mark>
+
+GIF也是由块来划分的，其中包括控制块和数据块两种。GIF的文件结构包括文件头，GIF数据流和文件终结器三部分。
+
+### <mark style="background-color:red;">Ⅰ.文件头</mark>
+
+文件头包括文件署名和版本号。文件署名就是GIF，版本号由89a（常用）和87a两种
+
+<figure><img src="../.gitbook/assets/image (3).png" alt=""><figcaption></figcaption></figure>
+
+### <mark style="background-color:red;">Ⅱ.逻辑屏幕标识符</mark>
+
+紧跟在header之后，这个是为了告诉decoder图片需要占用的空间，大小固定为7个字节。
+
+* 前两个字节表示逻辑屏幕宽度，计算方法为255\*byte2+byte1+byte2。单位为px。
+* 第三，四个字节：表示屏幕高度，计算方法和上面一样。
+
+<figure><img src="../.gitbook/assets/image (4).png" alt=""><figcaption></figcaption></figure>
+
+### <mark style="background-color:red;">Ⅲ.全局颜色列表</mark>
+
+IF 格式可以拥有 global color table，或用于针对每个子图片集，提供 local color table。每个 color table 由一个 RGB（就像通常我们见到的（255，0，0）红色 那种）列表组成。
+
+### <mark style="background-color:red;">Ⅳ.图像标识符</mark>
+
+一个 GIF 文件一般包含多个图片。之前的图片渲染模式一般是将多个图片绘制到一个大的（virtual canvas）虚拟画布上，而现在一般将这些图片集用于实现动画。
+
+每个 image 都以一个 image descriptor block（图像描述块）作为开头，这个块固定为 10 字节。
+
+### <mark style="background-color:red;">Ⅴ.图像数据</mark>
+
+终于到了图片数据实际存储的地方。Image Data 是由一系列的输出编码（output codes）构成，它们告诉 decoder（解码器）需要绘制在画布上的每个颜色信息。这些编码以字节码的形式组织在这个块中。
+
+### <mark style="background-color:red;">Ⅵ.文件终结器</mark>
+
+就是3B
+
+<figure><img src="../.gitbook/assets/image (5).png" alt=""><figcaption></figcaption></figure>
+
+### <mark style="background-color:red;">Ⅶ.空间轴</mark>
+
+由于 GIF 的动态特性，由一帧帧的图片构成，所以每一帧的图片，多帧图片间的结合，都成了隐藏信息的一种载体。
+
+### ①method1：stegsolve
+
+可以用frame browser一帧帧的看。
+
+### ②method2：convert
+
+对于需要分离的 GIF 文件, 可以使用 **convert** 命令将其每一帧分割开来（建议新建一个文件夹把它放进去再分割，不然很乱很难收拾）。如果分离出来的图片需要拼接，可以使用 **montage** 工具，也可以使用 **convert** 命令。
+
+### <mark style="background-color:red;">Ⅷ.时间轴</mark>
+
+GIF 文件每一帧间的时间间隔也可以作为信息隐藏的载体，隐藏具体方式需具体分析，可以通过 **identify** 命令清晰的打印出每一帧的时间间隔。
+
+***
+
+## <mark style="color:red;">2.exif</mark>
+
+可交换图像文件格式（英语：Exchangeable image file format，官方简称Exif），是专门为数码相机的照片设定的，可以记录数码照片的属性信息和拍摄数据。Exif信息是可以被任意编辑的，因此只有参考的功能。
+
+这个可以直接用linux下的exiftool工具。一般很简单很简单的题目就直接exif出答案，其实你也可以右键属性查看他的exif信息。
+
+***
+
+## <mark style="color:red;">3.从图片中提取文件</mark>
+
+其实这个图片分离主要是两个工具的使用binwalk和foremost。工具的使用在专门的章节大家自行查看。
+
+***
+
+
+
+
+
+
 
 
 
@@ -294,9 +399,9 @@ jpg格式的文件是分为一个一个的段里存储的，段的多少和长�
 
 {% embed url="https://www.cnblogs.com/P201821460033/p/13658489.html" %}
 
+{% embed url="https://3gstudent.github.io/%E9%9A%90%E5%86%99%E6%8A%80%E5%B7%A7-%E5%88%A9%E7%94%A8JPEG%E6%96%87%E4%BB%B6%E6%A0%BC%E5%BC%8F%E9%9A%90%E8%97%8Fpayload" %}
 
-
-
+{% embed url="https://www.cnblogs.com/chtxrt/p/17280677.html" %}
 
 
 
