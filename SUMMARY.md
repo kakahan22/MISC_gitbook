@@ -5,3 +5,5 @@
 * [🌔 图片类](tu-pian-lei/README.md)
   * [🌍 MISC图片类知识点总结](tu-pian-lei/misc-tu-pian-lei-zhi-shi-dian-zong-jie.md)
   * [🪐 图片类工具总结](tu-pian-lei/tu-pian-lei-gong-ju-zong-jie.md)
+  * [🌑 BUUCTF图片类MISC刷题](tu-pian-lei/buuctf-tu-pian-lei-misc-shua-ti.md)
+  * [💫 MISC流量分析](tu-pian-lei/misc-liu-liang-fen-xi.md)
