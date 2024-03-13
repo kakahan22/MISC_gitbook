@@ -200,6 +200,110 @@ exiftool a.jpg
 
 ### （1）官方文档
 
+{% embed url="https://www.kali.org/tools/binwalk/" %}
+
+### （2）使用方法
+
+_Binwalk 是一种快速、易于使用的工具，用于分析、逆向工程和提取固件映像。其实就是分析文件组成。_
+
+#### ①分析文件组成
+
+<figure><img src="../.gitbook/assets/image (10).png" alt=""><figcaption></figcaption></figure>
+
+#### ②分离文件
+
+```
+dd if=raw.jpg of=1.zip skip=xxx bs=1
+```
+
+***
+
+## 8.formost
+
+### （1）官方文档
+
+{% embed url="https://www.kali.org/tools/foremost/" %}
+
+### （2）使用方法
+
+将所有文件全部分离。一锅端。
+
+```
+foremost 1.jpg
+```
+
+***
+
+## 9.file
+
+### （1）官方文档
+
+{% embed url="https://blog.csdn.net/TCatTime/article/details/113812754" %}
+
+### （2）使用方法
+
+file的功能很强大，就是探测文件内部，并决定什么类型。除此之外，他还能告诉我们编码的类型，链接文件地址，是否为可执行脚本。
+
+```
+file 文件名
+```
+
+<figure><img src="../.gitbook/assets/image (12).png" alt=""><figcaption></figcaption></figure>
+
+***
+
+## 10.bwm
+
+### （1）官方文档
+
+{% embed url="https://linux.die.net/man/1/bwm-ng" %}
+
+### （2）使用方法
+
+这里用的kali真的方便到爆炸。
+
+盲水印主要有加密和解密两种指令。
+
+### ①加密
+
+```sh
+bwm encode 1.png water.png 2.png
+//1.png 为无水印原图
+//water.png 为水印图
+//2.png 为有盲水印图
+```
+
+### ②解密
+
+```
+bwm decode 1.png 2.png flag.png
+//1.png 为无水印原图
+//2.png 为有盲水印的图
+// flag.png 为解出来的图片
+```
+
+***
+
+## 11.strings
+
+### （1）官方文档
+
+{% embed url="https://ipcmen.com/strings" %}
+
+### （2）使用方法
+
+
+
+就是查找可以打印的字符。其实这个感觉输出的内容就是可以用winhex来看。
+
+```
+strings 文件名
+```
+
+<figure><img src="../.gitbook/assets/image (13).png" alt=""><figcaption></figcaption></figure>
+
+***
+
 
 
 
@@ -215,4 +319,14 @@ exiftool a.jpg
 ## 参考门：
 
 {% embed url="https://www.cnblogs.com/lzkalislw/p/13475137.html" %}
+
+{% embed url="https://cloud.tencent.com/developer/article/2272480" %}
+
+
+
+
+
+
+
+
 
