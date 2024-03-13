@@ -8,4 +8,3 @@
   * [🌑 BUUCTF图片类MISC刷题](tu-pian-lei/buuctf-tu-pian-lei-misc-shua-ti.md)
 * [🌭 流量分析类](liu-liang-fen-xi-lei/README.md)
   * [🍔 流量分析知识点总结](liu-liang-fen-xi-lei/liu-liang-fen-xi-zhi-shi-dian-zong-jie.md)
-  * [🍟 流量分析工具wireshark](liu-liang-fen-xi-lei/liu-liang-fen-xi-gong-ju-wireshark.md)
