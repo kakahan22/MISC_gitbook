@@ -6,4 +6,6 @@
   * [🌍 MISC图片类知识点总结](tu-pian-lei/misc-tu-pian-lei-zhi-shi-dian-zong-jie.md)
   * [🪐 图片类工具总结](tu-pian-lei/tu-pian-lei-gong-ju-zong-jie.md)
   * [🌑 BUUCTF图片类MISC刷题](tu-pian-lei/buuctf-tu-pian-lei-misc-shua-ti.md)
-  * [💫 MISC流量分析](tu-pian-lei/misc-liu-liang-fen-xi.md)
+* [🌭 流量分析类](liu-liang-fen-xi-lei/README.md)
+  * [🍔 流量分析知识点总结](liu-liang-fen-xi-lei/liu-liang-fen-xi-zhi-shi-dian-zong-jie.md)
+  * [🍟 流量分析工具wireshark](liu-liang-fen-xi-lei/liu-liang-fen-xi-gong-ju-wireshark.md)

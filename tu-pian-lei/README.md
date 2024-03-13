@@ -22,5 +22,11 @@ description: 考的很多都有图片类，图片类感觉是必考的虽然简�
 
 {% file src="../.gitbook/assets/Stegdetect (1).zip" %}
 
+4.ARCHPR安装包
+
+这个也是exe的，直接去我的github去下载吧。注册码上网搜一下随便都可以。
+
+
+
 
 
