@@ -16,13 +16,13 @@ description: 这里还有很多的工具所以我会把安装包也上传上来�
 
 将一张png图片放到winhex下面看看吧。
 
-<figure><img src="../.gitbook/assets/image (2) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (2) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 #### <mark style="color:yellow;">(1)png文件格式</mark>
 
 png文件从整体上来看主要是由文件头和三组以上的数据块（后面介绍）按照特定的顺序组成，最基本的png至少包括文件头，IHDR,IDAT,IEND组成。用一张图来表示
 
-<figure><img src="../.gitbook/assets/image (3) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (3) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### <mark style="background-color:red;">Ⅰ.文件头</mark>
 
@@ -32,7 +32,7 @@ png文件从整体上来看主要是由文件头和三组以上的数据块（�
 89 50 4E 47 0D 0A 1A 0A          
 ```
 
-<figure><img src="../.gitbook/assets/image (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### <mark style="background-color:red;">Ⅱ数据块（Chunk）</mark>
 
@@ -57,7 +57,7 @@ PNG有两种类型的数据块，一个是标准的数据块，另外一个是�
 
 #### ②CRC
 
-<figure><img src="../.gitbook/assets/image (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 从第二行的D开始后4个字节就是CRC校验码。
 
@@ -196,7 +196,7 @@ IDAT存放着图像真正的数据信息，因此，如果能够了解IDAT的结
 
 这里有一个工具可以判断IDAT是否是正确的。pngcheck ，如果不了解的，可以去看看。 [tu-pian-lei-gong-ju-zong-jie.md](tu-pian-lei-gong-ju-zong-jie.md "mention")
 
-<figure><img src="../.gitbook/assets/image (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 我们可以看到我的这张图片的IDAT的长度是在65536就满了。
 
@@ -232,7 +232,7 @@ print result
 00 00 00 00 49 45 4E 44 AE 42 60 82
 ```
 
-<figure><img src="../.gitbook/assets/image (2) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (2) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 IEND数据块的长度总是`00 00 00 00`，数据标志总是`49 45 4E 44` ，所以他的CRC码也总是`AE 42 60 82`
 
@@ -308,7 +308,7 @@ GIF也是由块来划分的，其中包括控制块和数据块两种。GIF的�
 
 文件头包括文件署名和版本号。文件署名就是GIF，版本号由89a（常用）和87a两种
 
-<figure><img src="../.gitbook/assets/image (3) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (3) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### <mark style="background-color:red;">Ⅱ.逻辑屏幕标识符</mark>
 
