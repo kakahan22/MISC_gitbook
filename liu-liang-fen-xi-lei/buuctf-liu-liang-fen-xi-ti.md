@@ -32,7 +32,7 @@
 
 直接看第一个包发现黑客在目录穿越
 
-<figure><img src="../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (3).png" alt=""><figcaption></figcaption></figure>
 
 直接交上去成功了。
 
@@ -44,9 +44,37 @@
 
 这里有个知识点补充就是smtp协议
 
-<figure><img src="../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 直接就找到了from。
+
+<figure><img src="../.gitbook/assets/image (2) (1).png" alt=""><figcaption></figcaption></figure>
+
+
+
+
+
+***
+
+## 5.大流量分析（三） 1
+
+找后门文件
+
+就是找
+
+
+
+***
+
+## 6.\[NewStarCTF 2023 公开赛道]流量！鲨鱼！ 19
+
+<figure><img src="../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+
+直接在导出对象里面根据大小去找会快很多
+
+<figure><img src="../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
+
+看到base64加密知道就应该对了，两次，出来flag
 
 <figure><img src="../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
 
@@ -56,7 +84,37 @@
 
 ***
 
-## 5.大流量分析（三） 1
+## 7.\[DDCTF2018]流量分析 1
+
+这里是一道有关TSL密钥的题目，目前做到的唯一一道。
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
