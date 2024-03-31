@@ -12,3 +12,5 @@
   * [🌯 BUUCTF流量分析题](liu-liang-fen-xi-lei/buuctf-liu-liang-fen-xi-ti.md)
 * [🎤 内存分析类](nei-cun-fen-xi-lei/README.md)
   * [🔦 内存分析知识点（未完）](nei-cun-fen-xi-lei/nei-cun-fen-xi-zhi-shi-dian-wei-wan.md)
+* [🏦 BUUCTF刷题集](buuctf-shua-ti-ji/README.md)
+  * [🏩 题目wp](buuctf-shua-ti-ji/ti-mu-wp.md)
