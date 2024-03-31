@@ -102,7 +102,7 @@ contani区分大小写，match不区分大小写
 ip.src == 源ip地址
 ```
 
-<figure><img src="../.gitbook/assets/image (3) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (3) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 或者我们点击Internet Protocol Version4下面的source 选中作为过滤器应用。
 
@@ -112,7 +112,7 @@ ip.src == 源ip地址
 ip.dst == 目的ip地址
 ```
 
-<figure><img src="../.gitbook/assets/image (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 另一种方法同理，选中作为过滤器。
 
@@ -122,13 +122,13 @@ ip.dst == 目的ip地址
 eth.dst == 筛选目标mac地址
 ```
 
-<figure><img src="../.gitbook/assets/image (2) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (2) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ```
 eth.addr == 筛选MAC地址
 ```
 
-<figure><img src="../.gitbook/assets/image (3) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (3) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### ⑨端口筛选
 
@@ -136,7 +136,7 @@ eth.addr == 筛选MAC地址
 tcp.dstport == 80 筛选tcp协议的目标端口
 ```
 
-<figure><img src="../.gitbook/assets/image (4).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (4) (1).png" alt=""><figcaption></figcaption></figure>
 
 同理
 
@@ -283,11 +283,11 @@ http contains "FLAG"             筛选HTTP内容为/FLAG 的流量包
 
 ctrl+F，就能出来。
 
-<figure><img src="../.gitbook/assets/image (5).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (5) (1).png" alt=""><figcaption></figcaption></figure>
 
 这里有不同的过滤器能选，我们一般选择字符串。
 
-<figure><img src="../.gitbook/assets/image (6).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (6) (1).png" alt=""><figcaption></figcaption></figure>
 
 这里还有分组列表，分组详情，分组字节流三个选项，分别对应wireshark的三个部分。
 
@@ -385,18 +385,6 @@ HTTPS是HTTP+SSL/TLS，所以我们传输的数据时加密后的数据。所以
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
 ***
 
 ## （10）SMTP协议
@@ -415,25 +403,44 @@ HTTPS是HTTP+SSL/TLS，所以我们传输的数据时加密后的数据。所以
 
 
 
+***
 
+## （11）TLS解密
 
+对于这个，可以先了解一下这篇文章所提到内容[https://zhangqingya.cn/2022/05/13/%E8%A7%A3%E5%AF%86TLS%E5%8D%8F%E8%AE%AE%E5%85%A8%E8%AE%B0%E5%BD%95%E4%B9%8B%E5%88%A9%E7%94%A8wireshark%E8%A7%A3%E5%AF%86](https://zhangqingya.cn/2022/05/13/%E8%A7%A3%E5%AF%86TLS%E5%8D%8F%E8%AE%AE%E5%85%A8%E8%AE%B0%E5%BD%95%E4%B9%8B%E5%88%A9%E7%94%A8wireshark%E8%A7%A3%E5%AF%86)
 
+首先介绍什么是TLS，
 
+TLS：
 
+> 传输层安全性 （TLS） 在两个主机之间的通信中提供安全性。它提供完整性、身份验证和机密性。它最常用于 Web 浏览器，但可以与任何使用 TCP 作为传输层的协议一起使用。
 
+目前wireshark提供了两种可以用的方法，一种是使用每个会话密钥的密钥日志文件（pre-master-secret），另一种是私钥解密。
 
+### ①密钥交换算法
 
+这个算法有一些主要的标志，比如ClientKeyExchange，Client hello，这种。
 
+<figure><img src="../.gitbook/assets/image (66).png" alt=""><figcaption></figcaption></figure>
 
+我们需要知道私钥文件的内容格式，例如
 
+```
+-----BEGIN PRIVATE KEY-----
+MIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQDReQzlKVeAK8b5
+TRcRBhSi9IYwHX8Nqc8K4HeDRvN7HiBQQP3bhUkVekdoXpRLYVuc7A8h1BLr93Qw
+…
+KOi8FZl+jhG+p8vtpK5ZAIyp
+-----END PRIVATE KEY-----
+```
 
+我们如果要用它解密，只需要将这个文件，导入到编辑->首选项->协议->TLS->edit->+就可以了。
 
+<figure><img src="../.gitbook/assets/image (67).png" alt=""><figcaption></figcaption></figure>
 
+<figure><img src="../.gitbook/assets/image (68).png" alt=""><figcaption></figcaption></figure>
 
-
-
-
-
+然后流量包就会被解密，再进行查找，就一般成功了。
 
 
 
