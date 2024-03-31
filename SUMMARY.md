@@ -10,4 +10,5 @@
   * [🍔 流量分析知识点总结（未完）](liu-liang-fen-xi-lei/liu-liang-fen-xi-zhi-shi-dian-zong-jie-wei-wan.md)
   * [🥪 流量分析工具（未完）](liu-liang-fen-xi-lei/liu-liang-fen-xi-gong-ju-wei-wan.md)
   * [🌯 BUUCTF流量分析题](liu-liang-fen-xi-lei/buuctf-liu-liang-fen-xi-ti.md)
-* [🎤 内存分析类](nei-cun-fen-xi-lei.md)
+* [🎤 内存分析类](nei-cun-fen-xi-lei/README.md)
+  * [🔦 内存分析知识点（未完）](nei-cun-fen-xi-lei/nei-cun-fen-xi-zhi-shi-dian-wei-wan.md)
