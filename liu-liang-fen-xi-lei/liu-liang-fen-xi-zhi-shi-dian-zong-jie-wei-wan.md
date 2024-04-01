@@ -102,7 +102,7 @@ contani区分大小写，match不区分大小写
 ip.src == 源ip地址
 ```
 
-<figure><img src="../.gitbook/assets/image (3) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (3) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 或者我们点击Internet Protocol Version4下面的source 选中作为过滤器应用。
 
@@ -112,7 +112,7 @@ ip.src == 源ip地址
 ip.dst == 目的ip地址
 ```
 
-<figure><img src="../.gitbook/assets/image (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 另一种方法同理，选中作为过滤器。
 
@@ -122,13 +122,13 @@ ip.dst == 目的ip地址
 eth.dst == 筛选目标mac地址
 ```
 
-<figure><img src="../.gitbook/assets/image (2) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (2) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ```
 eth.addr == 筛选MAC地址
 ```
 
-<figure><img src="../.gitbook/assets/image (3) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (3) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### ⑨端口筛选
 
@@ -136,7 +136,7 @@ eth.addr == 筛选MAC地址
 tcp.dstport == 80 筛选tcp协议的目标端口
 ```
 
-<figure><img src="../.gitbook/assets/image (4) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (4) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 同理
 
@@ -204,7 +204,7 @@ http contains "FLAG"             筛选HTTP内容为/FLAG 的流量包
 
 这个窗口实现的捕捉文件包含的所有协议的树状分支
 
-<figure><img src="../.gitbook/assets/image (14).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (14) (1).png" alt=""><figcaption></figcaption></figure>
 
 包含的字段有
 
@@ -225,7 +225,7 @@ http contains "FLAG"             筛选HTTP内容为/FLAG 的流量包
 
 发生于一特定端点的IP间的所有流量。
 
-<figure><img src="../.gitbook/assets/image (15).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (15) (1).png" alt=""><figcaption></figcaption></figure>
 
 查看收发大量数据流的 IP 地址。如果是你知道的服务器（你记得服务器的地址或地址范围），那问题就解决了；但也有可能只是某台设备正在扫描网络，或仅是一台产生过多数据的 PC。 ​ - 查看扫描模式（scan pattern）。这可能是一次正常的扫描，如 SNMP 软件发送 ping 报文以查找网络，但通常扫描都不是好事情
 
@@ -257,15 +257,15 @@ http contains "FLAG"             筛选HTTP内容为/FLAG 的流量包
 
 在分组详情中找到data，Line-based text，JPEG File Interchange Format，data：text/html层，然后鼠标右键点击->导出分组字节流。
 
-<figure><img src="../.gitbook/assets/image (10).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (10) (1).png" alt=""><figcaption></figcaption></figure>
 
 如果是菜刀下载文件的流量，需要删除分组字节流前开头和结尾的X@Y字符，否则文件会出错。
 
 右键->显示分组字节。然后再对弹出窗口的开始和结束进行修改。开始加三，结束减三。
 
-<figure><img src="../.gitbook/assets/image (11).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (11) (1).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../.gitbook/assets/image (12).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (12) (1).png" alt=""><figcaption></figcaption></figure>
 
 
 
@@ -283,15 +283,15 @@ http contains "FLAG"             筛选HTTP内容为/FLAG 的流量包
 
 ctrl+F，就能出来。
 
-<figure><img src="../.gitbook/assets/image (5) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (5) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 这里有不同的过滤器能选，我们一般选择字符串。
 
-<figure><img src="../.gitbook/assets/image (6) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (6) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 这里还有分组列表，分组详情，分组字节流三个选项，分别对应wireshark的三个部分。
 
-<figure><img src="../.gitbook/assets/image (7).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (7) (1).png" alt=""><figcaption></figcaption></figure>
 
 
 
@@ -311,11 +311,11 @@ wireshark的追踪流的功能可以将HTTP/TCP流量集合在一起还原成原
 
 右键->追踪流->HTTP流/TCP流
 
-<figure><img src="../.gitbook/assets/image (8).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (8) (1).png" alt=""><figcaption></figcaption></figure>
 
 弹出的窗口可以看到被还原的流量信息。
 
-<figure><img src="../.gitbook/assets/image (9).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (9) (1).png" alt=""><figcaption></figcaption></figure>
 
 
 
