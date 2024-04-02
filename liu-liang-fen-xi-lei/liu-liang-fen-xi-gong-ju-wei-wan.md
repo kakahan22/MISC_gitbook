@@ -26,7 +26,7 @@ description: 本来以为只有wireshark这一个工具，后面发现还有其�
 
 我们用的是linux版的。
 
-<figure><img src="../.gitbook/assets/image (13) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (13) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 如果要修复某个pcap包，我们只要
 

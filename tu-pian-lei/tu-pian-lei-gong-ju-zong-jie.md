@@ -22,7 +22,7 @@ description: Misc感觉就是在用工具，发现有点难了说实话，比web
 pngcheck -v 图片名
 ```
 
-<figure><img src="../.gitbook/assets/image (9) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (9) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ***
 
@@ -38,7 +38,7 @@ pngcheck -v 图片名
 
 我们首先介绍他的界面的功能
 
-<figure><img src="../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 File Format：文件格式，查看图片的具体信息
 
@@ -54,7 +54,7 @@ Image Combiner：拼图，图片拼接。
 
 查看文件格式
 
-<figure><img src="../.gitbook/assets/image (4) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (4) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 我们可以看到他有Chunk数据块的很多信息，CRC什么的都有。
 
@@ -64,7 +64,7 @@ Image Combiner：拼图，图片拼接。
 
 数据提取
 
-<figure><img src="../.gitbook/assets/image (5) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (5) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 左边主要是RGBA的颜色通道。我们先介绍这几个参数。
 
@@ -90,7 +90,7 @@ R的亮度各有256个级别，GB同理。即从0到255，合计为256个。从�
 
 所以我们如果要看到LSB隐写的信息的话，就要把他设置成为下图这样。
 
-<figure><img src="../.gitbook/assets/image (6) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (6) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ***
 
@@ -108,13 +108,13 @@ R的亮度各有256个级别，GB同理。即从0到255，合计为256个。从�
 
 直接用可视化的方式，打开xsteg.exe。
 
-<figure><img src="../.gitbook/assets/image (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 然后修改参数，把sensitivity修改为10.00,把敏感度调高了才好检测到隐藏信息。
 
 然后选择文件
 
-<figure><img src="../.gitbook/assets/image (2) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 就可以出现结果了。
 
@@ -152,9 +152,9 @@ sudo apt-get install imagemagick
 convert A.gif A.png  #将A.gif中每一帧提取成A-n.png
 ```
 
-<figure><img src="../.gitbook/assets/image (6) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (6) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../.gitbook/assets/image (7) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (7) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 答应我在一个文件夹里面弄，不然会弄死你。
 
@@ -192,7 +192,7 @@ identify -format "%s %T \n" 100.gif  	#格式：帧序号 间隔
 exiftool a.jpg
 ```
 
-<figure><img src="../.gitbook/assets/image (8) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (8) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ***
 
@@ -208,7 +208,7 @@ _Binwalk 是一种快速、易于使用的工具，用于分析、逆向工程�
 
 #### ①分析文件组成
 
-<figure><img src="../.gitbook/assets/image (10) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (10) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 #### ②分离文件
 
@@ -248,7 +248,7 @@ file的功能很强大，就是探测文件内部，并决定什么类型。除�
 file 文件名
 ```
 
-<figure><img src="../.gitbook/assets/image (12) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (12) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ***
 
@@ -300,7 +300,7 @@ bwm decode 1.png 2.png flag.png
 strings 文件名
 ```
 
-<figure><img src="../.gitbook/assets/image (13) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (13) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ***
 
