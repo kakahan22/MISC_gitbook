@@ -4,7 +4,7 @@ description: 其实不想弄是因为就是指令的使用，但是蓝桥杯可�
 
 # 🔦 内存分析知识点
 
-## 1.常用指令
+## 1.volatility2常用指令
 
 主要的格式是
 
@@ -201,6 +201,324 @@ volatility -f xx.vmem --profile=... dumpregistery -D ./
 
 
 
+***
+
+## 2.volatility3
+
+volatility3的用法和2不一样，不要指定 -profile，所以我们只要插件就行。
+
+
+
+```sh
+python3 vol.py [plugin] -f [image]
+ 
+常用插件：
+    layerwriter：列出内存镜像platform信息
+    linux.bash：从内存中恢复bash命令历史记录
+    linux.check_afinfo：验证网络协议的操作功能指针
+    linux.check_syscall：检查系统调用表中的挂钩
+    linux.elfs：列出所有进程的所有内存映射ELF文件
+    linux.lsmod：列出加载的内核模块
+    linux.lsof：列出所有进程的所有内存映射
+    linux.malfind：列出可能包含注入代码的进程内存范围
+    linux.proc：列出所有进程的所有内存映射
+    linux.pslist：列出linux内存映像中存在的进程
+    linux.pstree：列出进程树
+    mac.bash：从内存中恢复bash命令历史记录
+    mac.check_syscall：检查系统调用表中的挂钩
+    mac.check_sysctl：检查sysctl处理程序的挂钩
+    mac.check_trap_table：检查trap表中的挂钩
+    mac.ifconfig：列出网卡信息
+    mac.lsmod：列出加载的内核模块
+    mac.lsof：列出所有进程的所有内存映射
+    mac.malfind：列出可能包含注入代码的进程内存范围
+    mac.netstat：列出所有进程的所有网络连接
+    mac.psaux：恢复程序命令行参数
+    mac.pslist：列出linux内存映像中存在的进程
+    mac.pstree：列出进程树
+    mac.tasks：列出Mac内存映像中存在的进程
+    windows.info：显示正在分析的内存样本的OS和内核详细信息
+    windows.callbacks：列出内核回调和通知例程
+    windows.cmdline：列出进程命令行参数
+    windows.dlldump：将进程内存范围DLL转储
+    windows.dlllist：列出Windows内存映像中已加载的dll模块
+    windows.driverirp：在Windows内存映像中列出驱动程序的IRP
+    windows.driverscan：扫描Windows内存映像中存在的驱动程序
+    windows.filescan：扫描Windows内存映像中存在的文件对象
+    windows.handles：列出进程打开的句柄
+    windows.malfind：列出可能包含注入代码的进程内存范围
+    windows.moddump：转储内核模块
+    windows.modscan：扫描Windows内存映像中存在的模块
+    windows.mutantscan：扫描Windows内存映像中存在的互斥锁
+    windows.pslist：列出Windows内存映像中存在的进程
+    windows.psscan：扫描Windows内存映像中存在的进程
+    windows.pstree：列出进程树
+    windows.procdump：转储处理可执行映像
+    windows.registry.certificates：列出注册表中存储的证书
+    windows.registry.hivelist：列出内存映像中存在的注册表配置单元
+    windows.registry.hivescan：扫描Windows内存映像中存在的注册表配置单元
+    windows.registry.printkey：在配置单元或特定键值下列出注册表项
+    windows.registry.userassist：打印用户助手注册表项和信息
+    windows.ssdt：列出系统调用表
+    windows.strings：读取字符串命令的输出，并指示每个字符串属于哪个进程
+    windows.svcscan：扫描Windows服务
+    windows.symlinkscan：扫描Windows内存映像中存在的链接
+```
+
+
+
+### ①查看映像信息
+
+```
+python .\vol.py -f xxx.raw windows.info
+```
+
+<figure><img src="../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+
+### ②查看映像进程
+
+```
+python .\vol.py -f xxx.raw windows.pslist
+python .\vol.py -f xxx.raw windows.psscan
+python .\vol.py -f xxx.raw windows.pstree
+```
+
+<figure><img src="../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
+
+### ③**查看指定 pid 的进程**
+
+```
+python .\vol.py -f xxx.raw windows.pslist --pid 1234
+```
+
+<figure><img src="../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
+
+### ④进程转储
+
+```
+python .\vol.py -o ./outputdir/ -f xxx.raw windows.pslist --pid 1234 --dump
+```
+
+<figure><img src="../.gitbook/assets/image (3).png" alt=""><figcaption></figcaption></figure>
+
+<figure><img src="../.gitbook/assets/image (4).png" alt=""><figcaption></figcaption></figure>
+
+
+
+### ⑤查看句柄
+
+<pre><code>python .\vol.py -f xxx.raw windows.handles
+<strong>python .\vol.py -f xxx.raw windows.handles --pid 1234
+</strong>
+</code></pre>
+
+
+
+### ⑥查看 DLL
+
+```
+python .\vol.py -f xxx.raw windows.dlllist
+python .\vol.py -f xxx.raw windows.dlllist --pid 1234
+```
+
+
+
+### ⑦DLL 转储
+
+```
+python .\vol.py -o ./outputdir/ -f xxx.raw windows.dlllist --pid 1234 --dump
+
+```
+
+
+
+### ⑧查看命令行
+
+```
+python .\vol.py -f xxx.raw windows.cmdline
+python .\vol.py -f xxx.raw windows.cmdline --pid 1234
+
+```
+
+
+
+### ⑨查看网络端口
+
+```
+python .\vol.py -f xxx.raw windows.netscan
+
+```
+
+
+
+### **⑩①查看完整的结果，但可能包含垃圾信息和虚假信息 (谨慎使用)**
+
+```
+python .\vol.py -f xxx.raw windows.netscan --include-corrupt
+
+```
+
+
+
+### ⑩②查看注册表信息
+
+```
+python .\vol.py -f xxx.raw windows.registry.hivescan
+python .\vol.py -f xxx.raw windows.registry.hivelist
+
+```
+
+
+
+### ⑩③**查看指定过滤器 (文件夹) 下的注册表信息**
+
+<pre><code><strong>python .\vol.py -f xxx.raw windows.registry.hivelist --filter FILTER
+</strong></code></pre>
+
+
+
+### ⑩④注册表信息转储
+
+```
+python .\vol.py -o ./outputdir/ -f xxx.raw windows.hivelist --filter FILTER --dump
+
+```
+
+
+
+### ⑩⑤查看注册表键值对
+
+```
+python .\vol.py -f xxx.raw windows.registry.printkey
+
+```
+
+
+
+### ⑩⑥**查看指定过滤器 (文件夹) 下的注册表信息，但需要 `hivelist` 提供的 `offset`**
+
+```
+python .\vol.py -f xxx.raw windows.registry.printkey --offset OFFSET
+
+```
+
+
+
+### ⑩⑦**查看指定键下的注册表值**
+
+```
+python .\vol.py -f xxx.raw windows.registry.printkey --key KEY
+
+```
+
+
+
+### ⑩⑧**打印所有键的信息**
+
+```
+python .\vol.py -f xxx.raw windows.registry.printkey --recurse
+```
+
+
+
+### ⑩⑨查看文件信息
+
+```
+python .\vol.py -f xxx.raw windows.filescan
+```
+
+
+
+建议通过 powershell 的 Select-String 或者 bash 的 grep 进行搜索，如：
+
+```
+python .\vol.py -f xxx.raw windows.filescan | grep "flag"
+
+```
+
+
+
+```
+python .\vol.py -f xxx.raw windows.filescan | Select-String "flag"
+
+```
+
+
+
+### ②⑩文件转储
+
+**需要 `pslist` 提供的 `pid`**
+
+```
+python .\vol.py -o ./outputdir/ -f xxx.raw windows.dumpfiles --pid 1234
+
+```
+
+
+
+**(推荐) 需要 `filescan` 提供的 `offset` (一般来说为 `physaddr`)**
+
+```
+python .\vol.py -o ./outputdir/ -f xxx.raw windows.dumpfiles --virtaddr 0xee1122
+python .\vol.py -o ./outputdir/ -f xxx.raw windows.dumpfiles --physaddr 0xee1122
+
+```
+
+
+
+### ②①查找恶意注入代码
+
+```
+python .\vol.py -f xxx.raw windows.malfind
+python .\vol.py -f xxx.raw windows.malfind --pid 1234
+
+```
+
+
+
+**恶意注入代码转储**
+
+```
+python .\vol.py -o ./outputdir/ -f xxx.raw windows.malfind --pid 1234 --dump
+
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -210,6 +528,10 @@ volatility -f xx.vmem --profile=... dumpregistery -D ./
 {% embed url="https://www.cnblogs.com/sakura--tears/p/17148293.html" %}
 
 {% embed url="https://blog.51cto.com/baimao/6239392" %}
+
+{% embed url="https://hasegawaazusa.github.io/vol3-note.html" %}
+
+
 
 
 

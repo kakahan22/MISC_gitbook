@@ -22,7 +22,7 @@ zip由压缩源文件数据区，压缩源文件目录区，压缩源文件目�
 14 00
 ```
 
-<figure><img src=".gitbook/assets/image (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 全局方式位标记（有无加密）
 
@@ -30,7 +30,7 @@ zip由压缩源文件数据区，压缩源文件目录区，压缩源文件目�
 00 00
 ```
 
-<figure><img src=".gitbook/assets/image (2) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (2) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 压缩方式
 
@@ -38,7 +38,7 @@ zip由压缩源文件数据区，压缩源文件目录区，压缩源文件目�
 08 00
 ```
 
-<figure><img src=".gitbook/assets/image (3) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (3) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 最后修改文件时间
 
@@ -46,7 +46,7 @@ zip由压缩源文件数据区，压缩源文件目录区，压缩源文件目�
 C2 64
 ```
 
-<figure><img src=".gitbook/assets/image (4) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (4) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 最后修改文件日期
 
@@ -54,7 +54,7 @@ C2 64
 66 4F
 ```
 
-<figure><img src=".gitbook/assets/image (5) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (5) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 CRC-32校验
 
