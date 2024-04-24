@@ -445,6 +445,11 @@ python .\vol.py -f xxx.raw windows.filescan | Select-String "flag"
 
 
 
+```
+python .\vol.py -f xxx.raw windows.filescan | findstr flag
+
+```
+
 ### ②⑩文件转储
 
 **需要 `pslist` 提供的 `pid`**
@@ -523,6 +528,22 @@ python .\vol.py -o ./outputdir/ -f xxx.raw windows.malfind --pid 1234 --dump
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 ## 参考门：
 
 {% embed url="https://www.cnblogs.com/sakura--tears/p/17148293.html" %}
@@ -531,7 +552,7 @@ python .\vol.py -o ./outputdir/ -f xxx.raw windows.malfind --pid 1234 --dump
 
 {% embed url="https://hasegawaazusa.github.io/vol3-note.html" %}
 
-
+{% embed url="https://blog.csdn.net/Aluxian_/article/details/128194996" %}
 
 
 
