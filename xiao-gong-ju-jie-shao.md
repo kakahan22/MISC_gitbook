@@ -57,17 +57,17 @@ options:
                         the config passphrase that SecureCRT uses
 ```
 
-<figure><img src=".gitbook/assets/image (178).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (183).png" alt=""><figcaption></figcaption></figure>
 
 （2）使用例子：
 
 这里我们用来解密试试
 
-<figure><img src=".gitbook/assets/image (180).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (185).png" alt=""><figcaption></figcaption></figure>
 
 记得要把u去掉
 
-<figure><img src=".gitbook/assets/image (179).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (184).png" alt=""><figcaption></figcaption></figure>
 
 
 
@@ -89,11 +89,11 @@ options:
 
 也就是说，我们是为了解密容器。
 
-<figure><img src=".gitbook/assets/image (188).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (193).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src=".gitbook/assets/image (189).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (194).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src=".gitbook/assets/image (190).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (195).png" alt=""><figcaption></figcaption></figure>
 
 
 

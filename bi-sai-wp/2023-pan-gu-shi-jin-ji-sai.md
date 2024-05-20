@@ -14,7 +14,7 @@ description: 要参加这个比赛前还是得先做个题。
 
 直接放到jadx里面
 
-<figure><img src="../.gitbook/assets/image (94).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (99).png" alt=""><figcaption></figcaption></figure>
 
 
 
@@ -30,7 +30,7 @@ description: 要参加这个比赛前还是得先做个题。
 否
 ```
 
-<figure><img src="../.gitbook/assets/image (95).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (100).png" alt=""><figcaption></figcaption></figure>
 
 
 
@@ -44,7 +44,7 @@ description: 要参加这个比赛前还是得先做个题。
 A6021386163125
 ```
 
-<figure><img src="../.gitbook/assets/image (96).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (101).png" alt=""><figcaption></figcaption></figure>
 
 
 
@@ -56,7 +56,7 @@ A6021386163125
 vip.shuadan.com
 ```
 
-<figure><img src="../.gitbook/assets/image (97).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (102).png" alt=""><figcaption></figcaption></figure>
 
 
 
@@ -72,11 +72,11 @@ vip.shuadan.com
 ​是
 ```
 
-<figure><img src="../.gitbook/assets/image (98).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (103).png" alt=""><figcaption></figcaption></figure>
 
 可以看到是有的，但是被隐藏了。
 
-<figure><img src="../.gitbook/assets/image (99).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (104).png" alt=""><figcaption></figcaption></figure>
 
 
 
@@ -90,7 +90,7 @@ plus.H5CE4B30D
 
 
 
-<figure><img src="../.gitbook/assets/image (100).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (105).png" alt=""><figcaption></figcaption></figure>
 
 
 
@@ -104,7 +104,7 @@ plus.H5CE4B30D
 
 
 
-<figure><img src="../.gitbook/assets/image (101).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (106).png" alt=""><figcaption></figcaption></figure>
 
 
 
@@ -116,7 +116,7 @@ plus.H5CE4B30D
 vip.usdtre.club
 ```
 
-<figure><img src="../.gitbook/assets/image (102).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (107).png" alt=""><figcaption></figcaption></figure>
 
 
 
@@ -126,7 +126,7 @@ vip.usdtre.club
 h5ce4b30d
 ```
 
-<figure><img src="../.gitbook/assets/image (103).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (108).png" alt=""><figcaption></figcaption></figure>
 
 
 
@@ -148,7 +148,7 @@ h5ce4b30d
 A9:8B:34:8B:04:50
 ```
 
-<figure><img src="../.gitbook/assets/image (63).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (68).png" alt=""><figcaption></figcaption></figure>
 
 
 
@@ -162,7 +162,7 @@ A9:8B:34:8B:04:50
 89014103211118510720
 ```
 
-<figure><img src="../.gitbook/assets/image (64).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (69).png" alt=""><figcaption></figcaption></figure>
 
 
 
@@ -178,9 +178,9 @@ A9:8B:34:8B:04:50
 Potato
 ```
 
-<figure><img src="../.gitbook/assets/image (65).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (70).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../.gitbook/assets/image (66).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (71).png" alt=""><figcaption></figcaption></figure>
 
 
 
@@ -196,19 +196,19 @@ Potato
 收到
 ```
 
-<figure><img src="../.gitbook/assets/image (67).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (72).png" alt=""><figcaption></figcaption></figure>
 
 group应该是g
 
-<figure><img src="../.gitbook/assets/image (68).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (73).png" alt=""><figcaption></figcaption></figure>
 
 把时间戳的时间升序排列一下
 
-<figure><img src="../.gitbook/assets/image (70).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (75).png" alt=""><figcaption></figcaption></figure>
 
 可以看到是这个base64解码一下啊
 
-<figure><img src="../.gitbook/assets/image (71).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (76).png" alt=""><figcaption></figcaption></figure>
 
 
 
@@ -222,15 +222,15 @@ group应该是g
 dc52d8225fd328c592841cb1c3cd1761
 ```
 
-<figure><img src="../.gitbook/assets/image (72).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (77).png" alt=""><figcaption></figcaption></figure>
 
 导出
 
-<figure><img src="../.gitbook/assets/image (73).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (78).png" alt=""><figcaption></figcaption></figure>
 
 放到hash my files
 
-<figure><img src="../.gitbook/assets/image (74).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (79).png" alt=""><figcaption></figcaption></figure>
 
 
 
@@ -248,11 +248,11 @@ wlzhg@3903@xn
 
 
 
-<figure><img src="../.gitbook/assets/image (75).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (80).png" alt=""><figcaption></figcaption></figure>
 
 上面说密码电话说了。然后就是密码规则。
 
-<figure><img src="../.gitbook/assets/image (76).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (81).png" alt=""><figcaption></figcaption></figure>
 
 就是中间的四位是随机组合，所以我们可以爆破密码。
 
@@ -268,9 +268,9 @@ for i in range(10000):
     print(str)
 ```
 
-<figure><img src="../.gitbook/assets/image (77).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (82).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../.gitbook/assets/image (78).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (83).png" alt=""><figcaption></figcaption></figure>
 
 
 
@@ -284,11 +284,11 @@ for i in range(10000):
 15137326185
 ```
 
-<figure><img src="../.gitbook/assets/image (79).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (84).png" alt=""><figcaption></figcaption></figure>
 
 在$o的表里面的login是电话
 
-<figure><img src="../.gitbook/assets/image (80).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (85).png" alt=""><figcaption></figcaption></figure>
 
 
 
@@ -300,17 +300,17 @@ for i in range(10000):
 技术部
 ```
 
-<figure><img src="../.gitbook/assets/image (83).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (88).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../.gitbook/assets/image (84).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (89).png" alt=""><figcaption></figcaption></figure>
 
 臧的id是229，partenid是109
 
-<figure><img src="../.gitbook/assets/image (85).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (90).png" alt=""><figcaption></figcaption></figure>
 
 109的对应的是技术部
 
-<figure><img src="../.gitbook/assets/image (86).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (91).png" alt=""><figcaption></figcaption></figure>
 
 
 
@@ -324,7 +324,7 @@ for i in range(10000):
 apple
 ```
 
-<figure><img src="../.gitbook/assets/image (81).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (86).png" alt=""><figcaption></figcaption></figure>
 
 
 
@@ -342,7 +342,7 @@ apple
 1976
 ```
 
-<figure><img src="../.gitbook/assets/image (82).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (87).png" alt=""><figcaption></figcaption></figure>
 
 
 
@@ -360,7 +360,7 @@ apple
 358360063200634
 ```
 
-<figure><img src="../.gitbook/assets/image (92).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (97).png" alt=""><figcaption></figcaption></figure>
 
 
 
@@ -374,7 +374,7 @@ apple
 4
 ```
 
-<figure><img src="../.gitbook/assets/image (93).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (98).png" alt=""><figcaption></figcaption></figure>
 
 
 
@@ -386,7 +386,7 @@ apple
 wxid_kr7b3jbooht322
 ```
 
-<figure><img src="../.gitbook/assets/image (87).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (92).png" alt=""><figcaption></figcaption></figure>
 
 
 
@@ -400,7 +400,7 @@ wxid_kr7b3jbooht322
 中国西安未央
 ```
 
-<figure><img src="../.gitbook/assets/image (88).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (93).png" alt=""><figcaption></figcaption></figure>
 
 
 
@@ -418,7 +418,7 @@ wxid_kr7b3jbooht322
 5768224669
 ```
 
-<figure><img src="../.gitbook/assets/image (89).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (94).png" alt=""><figcaption></figcaption></figure>
 
 
 
@@ -434,7 +434,7 @@ wxid_kr7b3jbooht322
 0.08
 ```
 
-<figure><img src="../.gitbook/assets/image (90).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (95).png" alt=""><figcaption></figcaption></figure>
 
 
 
@@ -446,7 +446,7 @@ molihuacha007@hotmail.com
 
 
 
-<figure><img src="../.gitbook/assets/image (91).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (96).png" alt=""><figcaption></figcaption></figure>
 
 
 
@@ -458,11 +458,11 @@ molihuacha007@hotmail.com
 
 这个苹果手机要从mac里面导出备份。
 
-<figure><img src="../.gitbook/assets/image (242).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (247).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../.gitbook/assets/image (243).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (248).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../.gitbook/assets/image (41).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (46).png" alt=""><figcaption></figcaption></figure>
 
 
 
@@ -482,7 +482,7 @@ molihuacha007@hotmail.com
 
 
 
-<figure><img src="../.gitbook/assets/image (42).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (47).png" alt=""><figcaption></figcaption></figure>
 
 
 
@@ -500,9 +500,9 @@ molihuacha007@hotmail.com
 
 
 
-<figure><img src="../.gitbook/assets/image (43).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (48).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../.gitbook/assets/image (44).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (49).png" alt=""><figcaption></figcaption></figure>
 
 
 
@@ -517,7 +517,7 @@ molihuacha007@hotmail.com
 
 ID没取出来，看来要自己取
 
-<figure><img src="../.gitbook/assets/image (45).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (50).png" alt=""><figcaption></figcaption></figure>
 
 emmm，答案这个真的不知道怎么找出来的。
 
@@ -541,7 +541,7 @@ emmm，答案这个真的不知道怎么找出来的。
 Windows 10 pro 14393
 ```
 
-<figure><img src="../.gitbook/assets/image (56).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (61).png" alt=""><figcaption></figcaption></figure>
 
 
 
@@ -551,7 +551,7 @@ Windows 10 pro 14393
 3 谷歌
 ```
 
-<figure><img src="../.gitbook/assets/image (57).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (62).png" alt=""><figcaption></figcaption></figure>
 
 
 
@@ -565,7 +565,7 @@ Windows 10 pro 14393
 1 掠夺攻略
 ```
 
-<figure><img src="../.gitbook/assets/image (58).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (63).png" alt=""><figcaption></figcaption></figure>
 
 
 
@@ -579,9 +579,9 @@ Windows 10 pro 14393
 1
 ```
 
-<figure><img src="../.gitbook/assets/image (55).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (60).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../.gitbook/assets/image (59).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (64).png" alt=""><figcaption></figcaption></figure>
 
 
 
@@ -595,7 +595,7 @@ Windows 10 pro 14393
 TrueCrypt
 ```
 
-<figure><img src="../.gitbook/assets/image (60).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (65).png" alt=""><figcaption></figcaption></figure>
 
 
 
@@ -612,7 +612,7 @@ TrueCrypt
 
 后面知道这种题用美亚跑，因为美亚的可以出一个疑似什么什么文件。
 
-<figure><img src="../.gitbook/assets/image (187).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (192).png" alt=""><figcaption></figcaption></figure>
 
 
 
@@ -628,7 +628,7 @@ TrueCrypt
 
 对D盘卷影分析
 
-<figure><img src="../.gitbook/assets/image (192).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (197).png" alt=""><figcaption></figcaption></figure>
 
 
 
@@ -648,21 +648,21 @@ TrueCrypt
 
 </div>
 
-<figure><img src="../.gitbook/assets/image (191).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (196).png" alt=""><figcaption></figcaption></figure>
 
 然后直接挂载他，因为被破了。
 
-<figure><img src="../.gitbook/assets/image (193).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (198).png" alt=""><figcaption></figcaption></figure>
 
 然后看到有h盘
 
-<figure><img src="../.gitbook/assets/image (194).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (199).png" alt=""><figcaption></figcaption></figure>
 
 图片一有
 
-<figure><img src="../.gitbook/assets/image (196).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (201).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../.gitbook/assets/image (197).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (202).png" alt=""><figcaption></figcaption></figure>
 
 
 
@@ -676,11 +676,11 @@ TrueCrypt
 38
 ```
 
-<figure><img src="../.gitbook/assets/image (199).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (204).png" alt=""><figcaption></figcaption></figure>
 
 
 
-<figure><img src="../.gitbook/assets/image (200).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (205).png" alt=""><figcaption></figcaption></figure>
 
 
 
@@ -706,11 +706,11 @@ TrueCrypt
 728
 ```
 
-<figure><img src="../.gitbook/assets/image (176).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (181).png" alt=""><figcaption></figcaption></figure>
 
 
 
-<figure><img src="../.gitbook/assets/image (175).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (180).png" alt=""><figcaption></figcaption></figure>
 
 
 
@@ -724,7 +724,7 @@ TrueCrypt
 239F39E353358584691790DDA5FF49BAA07CFDBB
 ```
 
-<figure><img src="../.gitbook/assets/image (50).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (55).png" alt=""><figcaption></figcaption></figure>
 
 
 
@@ -740,9 +740,9 @@ TrueCrypt
 536,870,912
 ```
 
-<figure><img src="../.gitbook/assets/image (172).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (177).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../.gitbook/assets/image (173).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (178).png" alt=""><figcaption></figcaption></figure>
 
 
 
@@ -754,7 +754,7 @@ TrueCrypt
 4
 ```
 
-<figure><img src="../.gitbook/assets/image (174).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (179).png" alt=""><figcaption></figcaption></figure>
 
 
 
@@ -774,7 +774,7 @@ TrueCrypt
 kangshifu0008@gmail.com
 ```
 
-<figure><img src="../.gitbook/assets/image (177).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (182).png" alt=""><figcaption></figcaption></figure>
 
 ### 14.根据臧觅风的计算机分析，该技术人员电脑内曾通过远程管理工具连接过服务器“master.k8s.com”,请给出连接的端口号？\[答案格式:22]\[★★☆☆☆] 1 2282&#x20;
 
@@ -782,7 +782,7 @@ kangshifu0008@gmail.com
 2282
 ```
 
-<figure><img src="../.gitbook/assets/image (54).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (59).png" alt=""><figcaption></figcaption></figure>
 
 
 
@@ -798,13 +798,13 @@ P@ssw0rd
 
 这个没做出来不怪我自己，得先上网搜一搜才知道。made。[https://www.cnblogs.com/NoId/p/16754669.html](https://www.cnblogs.com/NoId/p/16754669.html)
 
-<figure><img src="../.gitbook/assets/image (49).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (54).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../.gitbook/assets/image (48).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (53).png" alt=""><figcaption></figcaption></figure>
 
 需要对这个解密。网上的解密脚本我们直接用工具。
 
-<figure><img src="../.gitbook/assets/image (181).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (186).png" alt=""><figcaption></figcaption></figure>
 
 
 
@@ -820,9 +820,9 @@ P@ssw0rd
 C1934045C3348EA1BA618279AAC38C67
 ```
 
-<figure><img src="../.gitbook/assets/image (182).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (187).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../.gitbook/assets/image (183).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (188).png" alt=""><figcaption></figcaption></figure>
 
 
 
@@ -836,9 +836,9 @@ F
 
 
 
-<figure><img src="../.gitbook/assets/image (51).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (56).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../.gitbook/assets/image (52).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (57).png" alt=""><figcaption></figcaption></figure>
 
 
 
@@ -846,15 +846,15 @@ F
 
 找到了一个txt文件里面写了这个，但是他也没有特意说这个master password就是密码就是这个。所以这个地方。我觉得是自己漏了什么关键信息。而且后面看到下载了kee pass这个软件，但是没有看到，说明被truecrypt做成镜像里面了。这里找镜像文件我一直觉得很难，因为有时候他的后缀是txt和word，然后我觉得是从他们的大小，一般大的不正常，就猜测是truecrypt加密文件。
 
-<figure><img src="../.gitbook/assets/image (184).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (189).png" alt=""><figcaption></figcaption></figure>
 
 同样的方法来提取
 
-<figure><img src="../.gitbook/assets/image (201).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (206).png" alt=""><figcaption></figcaption></figure>
 
 别人的都能提取出来，我的一直提取不出来，不知道为什么，用passware kit了，反正是一样的，服了。
 
-<figure><img src="../.gitbook/assets/image (209).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (214).png" alt=""><figcaption></figcaption></figure>
 
 还是没有，我都怀疑是不是我的资料和他们的不是一个。算了，无语了。但是在我看文件的时候，生成了资料unprotected.docx文件
 
@@ -868,7 +868,7 @@ F
 后羿采集器
 ```
 
-<figure><img src="../.gitbook/assets/image (53).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (58).png" alt=""><figcaption></figcaption></figure>
 
 
 
@@ -880,23 +880,23 @@ F
 19225
 ```
 
-<figure><img src="../.gitbook/assets/image (210).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (215).png" alt=""><figcaption></figcaption></figure>
 
 一个一个算就行，
 
 100+18+18970+96+29+12(其实最后一个我数出来是13，但答案写的12）
 
-<figure><img src="../.gitbook/assets/image (211).png" alt=""><figcaption></figcaption></figure>
-
-<figure><img src="../.gitbook/assets/image (212).png" alt=""><figcaption></figcaption></figure>
-
-<figure><img src="../.gitbook/assets/image (213).png" alt=""><figcaption></figcaption></figure>
-
-<figure><img src="../.gitbook/assets/image (214).png" alt=""><figcaption></figcaption></figure>
-
-<figure><img src="../.gitbook/assets/image (215).png" alt=""><figcaption></figcaption></figure>
-
 <figure><img src="../.gitbook/assets/image (216).png" alt=""><figcaption></figcaption></figure>
+
+<figure><img src="../.gitbook/assets/image (217).png" alt=""><figcaption></figcaption></figure>
+
+<figure><img src="../.gitbook/assets/image (218).png" alt=""><figcaption></figcaption></figure>
+
+<figure><img src="../.gitbook/assets/image (219).png" alt=""><figcaption></figcaption></figure>
+
+<figure><img src="../.gitbook/assets/image (220).png" alt=""><figcaption></figcaption></figure>
+
+<figure><img src="../.gitbook/assets/image (221).png" alt=""><figcaption></figcaption></figure>
 
 
 
@@ -910,11 +910,11 @@ F
 
 文件名就是
 
-<figure><img src="../.gitbook/assets/image (220).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (225).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../.gitbook/assets/image (221).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (226).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../.gitbook/assets/image (222).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (227).png" alt=""><figcaption></figcaption></figure>
 
 
 
@@ -930,13 +930,13 @@ F
 8080
 ```
 
-<figure><img src="../.gitbook/assets/image (198).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (203).png" alt=""><figcaption></figcaption></figure>
 
 所以这个是一个云盘，我们在google的记录里面看到的有阿里云云盘
 
 我们去google记录里可以看到192.168.8.2下面的就是阿里云云盘，所以端口是8080
 
-<figure><img src="../.gitbook/assets/image (202).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (207).png" alt=""><figcaption></figcaption></figure>
 
 
 
@@ -950,9 +950,9 @@ F
 7890
 ```
 
-<figure><img src="../.gitbook/assets/image (224).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (229).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../.gitbook/assets/image (225).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (230).png" alt=""><figcaption></figcaption></figure>
 
 
 
@@ -966,7 +966,7 @@ F
 d4029286acc8bfd97818d5f8724f0f0a 
 ```
 
-<figure><img src="../.gitbook/assets/image (226).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (231).png" alt=""><figcaption></figcaption></figure>
 
 
 
@@ -988,7 +988,7 @@ d4029286acc8bfd97818d5f8724f0f0a
 im.pgscup.com:6661
 ```
 
-<figure><img src="../.gitbook/assets/image (223).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (228).png" alt=""><figcaption></figcaption></figure>
 
 
 
@@ -1006,7 +1006,7 @@ im.pgscup.com:6661
 2023-04-27 09:57:53
 ```
 
-<figure><img src="../.gitbook/assets/image (208).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (213).png" alt=""><figcaption></figcaption></figure>
 
 
 
@@ -1018,9 +1018,9 @@ im.pgscup.com:6661
 2
 ```
 
-<figure><img src="../.gitbook/assets/image (227).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (232).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../.gitbook/assets/image (228).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (233).png" alt=""><figcaption></figcaption></figure>
 
 
 
@@ -1034,7 +1034,7 @@ im.pgscup.com:6661
 0xab861963e000
 ```
 
-<figure><img src="../.gitbook/assets/image (229).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (234).png" alt=""><figcaption></figcaption></figure>
 
 
 
@@ -1057,7 +1057,7 @@ im.pgscup.com:6661
 
 ```
 
-<figure><img src="../.gitbook/assets/image (203).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (208).png" alt=""><figcaption></figcaption></figure>
 
 
 
@@ -1071,7 +1071,7 @@ im.pgscup.com:6661
 </strong>
 </code></pre>
 
-<figure><img src="../.gitbook/assets/image (204).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (209).png" alt=""><figcaption></figcaption></figure>
 
 
 
@@ -1085,9 +1085,9 @@ im.pgscup.com:6661
 Monterey
 ```
 
-<figure><img src="../.gitbook/assets/image (206).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (211).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../.gitbook/assets/image (205).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (210).png" alt=""><figcaption></figcaption></figure>
 
 
 
@@ -1097,7 +1097,7 @@ Monterey
 2022-10-9
 ```
 
-<figure><img src="../.gitbook/assets/image (207).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (212).png" alt=""><figcaption></figcaption></figure>
 
 
 
@@ -1111,7 +1111,7 @@ Monterey
 Darwin 21.6.0 
 ```
 
-<figure><img src="../.gitbook/assets/image (231).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (236).png" alt=""><figcaption></figcaption></figure>
 
 
 
@@ -1123,7 +1123,7 @@ ps指令，这些学linux的嘶吼学过
 1
 ```
 
-<figure><img src="../.gitbook/assets/image (232).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (237).png" alt=""><figcaption></figcaption></figure>
 
 
 
@@ -1133,7 +1133,7 @@ ps指令，这些学linux的嘶吼学过
 2023-04-14 15:55:50
 ```
 
-<figure><img src="../.gitbook/assets/image (230).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (235).png" alt=""><figcaption></figcaption></figure>
 
 
 
@@ -1145,11 +1145,11 @@ ps指令，这些学linux的嘶吼学过
 13
 ```
 
-<figure><img src="../.gitbook/assets/image (233).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (238).png" alt=""><figcaption></figcaption></figure>
 
 是在会话框一栏搜索的hostname，就是13个
 
-<figure><img src="../.gitbook/assets/image (234).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (239).png" alt=""><figcaption></figcaption></figure>
 
 
 
@@ -1163,23 +1163,23 @@ ps指令，这些学linux的嘶吼学过
 10
 ```
 
-<figure><img src="../.gitbook/assets/image (235).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (240).png" alt=""><figcaption></figcaption></figure>
 
 改个后缀
 
-<figure><img src="../.gitbook/assets/image (236).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (241).png" alt=""><figcaption></figcaption></figure>
 
 需要密码才能打开，这个密码还是他们的命名规则，害，还是得前后文连接。后缀需要改为hn了，因为是hn区。
 
 字典爆破
 
-<figure><img src="../.gitbook/assets/image (237).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (242).png" alt=""><figcaption></figcaption></figure>
 
 要仔细看字段对应的，有一个最新金额。
 
 
 
-<figure><img src="../.gitbook/assets/image (238).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (243).png" alt=""><figcaption></figcaption></figure>
 
 最新是10.1，但是估计要整数才能提款，就是10
 
@@ -1195,7 +1195,7 @@ ps指令，这些学linux的嘶吼学过
 2.5
 ```
 
-<figure><img src="../.gitbook/assets/image (239).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (244).png" alt=""><figcaption></figcaption></figure>
 
 
 
@@ -1209,7 +1209,7 @@ ps指令，这些学linux的嘶吼学过
 IxCnq3@yDp.net
 ```
 
-<figure><img src="../.gitbook/assets/image (240).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (245).png" alt=""><figcaption></figcaption></figure>
 
 
 
@@ -1223,7 +1223,7 @@ IxCnq3@yDp.net
 6
 ```
 
-<figure><img src="../.gitbook/assets/image (241).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (246).png" alt=""><figcaption></figcaption></figure>
 
 
 
@@ -1239,11 +1239,11 @@ IxCnq3@yDp.net
 
 开始以为是大蚂蚁，后来上网搜发现不是
 
-<figure><img src="../.gitbook/assets/image (46).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (51).png" alt=""><figcaption></figcaption></figure>
 
 除此之外，还有个print.exe运行了，但是我们不认识。应该就是这个
 
-<figure><img src="../.gitbook/assets/image (47).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (52).png" alt=""><figcaption></figcaption></figure>
 
 导不出来是为什么，妈的。酸了，我也不做二进制，后面再来填这个坑。
 
@@ -1441,7 +1441,7 @@ IxCnq3@yDp.net
 192.168.8.20
 ```
 
-<figure><img src="../.gitbook/assets/image (244).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (249).png" alt=""><figcaption></figcaption></figure>
 
 
 
@@ -1453,7 +1453,7 @@ IxCnq3@yDp.net
 P@ssw0rd
 ```
 
-<figure><img src="../.gitbook/assets/image (245).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (250).png" alt=""><figcaption></figcaption></figure>
 
 或者之前题目要从SECURECRT里面找到了服务器的密码，直接用就行.
 
@@ -1467,17 +1467,17 @@ afc455bdc29a45b18f3bae5048971e76
 
 仿真好后修改/etc/config/network文件的proto，把协议的static（静态）修改位dhcp。并且记下这个掩码。
 
-<figure><img src="../.gitbook/assets/image (32).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (37).png" alt=""><figcaption></figcaption></figure>
 
 把这个掩码修改为虚拟机的net网卡的网关。比如本人的是
 
-<figure><img src="../.gitbook/assets/image (34).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (39).png" alt=""><figcaption></figcaption></figure>
 
 <figure><img src="../.gitbook/assets/屏幕截图 2024-05-09 132531.png" alt=""><figcaption></figcaption></figure>
 
 然后reboot重启。
 
-<figure><img src="../.gitbook/assets/image (35).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (40).png" alt=""><figcaption></figcaption></figure>
 
 然后可以看到分配的ip是192.168.29.132
 
@@ -1485,7 +1485,7 @@ afc455bdc29a45b18f3bae5048971e76
 
 账号密码都知道了，前面有
 
-<figure><img src="../.gitbook/assets/image (39).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (44).png" alt=""><figcaption></figcaption></figure>
 
 <figure><img src="../.gitbook/assets/屏幕截图 2024-05-09 133147.png" alt=""><figcaption></figcaption></figure>
 
@@ -1531,7 +1531,7 @@ uuid，上网查也可以知道指令blkid可以看，注意是数据卷的，�
 /mnt/data
 ```
 
-<figure><img src="../.gitbook/assets/image (38).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (43).png" alt=""><figcaption></figcaption></figure>
 
 
 
